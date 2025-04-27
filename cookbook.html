@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요리 레시피 사이트</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #1a1a1a;
+            color: #eee;
+        }
+        header.navbar {
+            background-color: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            color: white;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav.menu {
+            display: flex;
+            gap: 40px;
+        }
+        nav.menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav.menu a:hover {
+            text-decoration: underline;
+        }
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .icon:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner {
+            margin-bottom: 60px;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .photo-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 40px 0;
+            background-color: #1a1a1a;
+        }
+
+        .photo-card {
+            position: relative;
+            min-width: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-info {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .photo-card:hover .photo-info {
+            opacity: 1;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: #111;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">CookBook</div>
+
+    <nav class="menu">
+        <a href="#">한식</a>
+        <a href="#">양식</a>
+        <a href="#">중식</a>
+        <a href="#">일식</a>
+    </nav>
+
+    <div class="icons">
+        <span class="icon">🔍</span>
+        <span class="icon">👤</span>
+    </div>
+</header>
+
+<main>
+    <div class="banner">
+        <img src="https://via.placeholder.com/1200x500.png?text=오늘의+추천+레시피" alt="오늘의 추천 레시피">
+    </div>
+
+    <section class="photo-gallery">
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=김치찌개" alt="김치찌개">
+            <div class="photo-info">
+                <p>김치찌개의 진한 맛을 느껴보세요!</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=파스타" alt="파스타">
+            <div class="photo-info">
+                <p>신선한 재료로 만든 이탈리안 파스타!</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=딸기+케이크" alt="딸기 케이크">
+            <div class="photo-info">
+                <p>달콤한 딸기와 부드러운 케이크의 조화</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=떡볶이" alt="떡볶이">
+            <div class="photo-info">
+                <p>매콤달콤 국민 간식 떡볶이!</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=샐러드" alt="샐러드">
+            <div class="photo-info">
+                <p>건강한 한 끼, 신선한 샐러드!</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/250x350.png?text=스시" alt="스시">
+            <div class="photo-info">
+                <p>정성 가득 일식 스시 세트</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 CookBook. All rights reserved.
+</footer>
+
+</body>
+</html>
