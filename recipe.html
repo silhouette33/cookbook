@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레시피 상세 페이지</title>
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <style>
+    .recipe-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fafaf5;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Pretendard', sans-serif;
+}
+
+.recipe-title {
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.recipe-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #58a27c;
+  margin: 30px 0;
+}
+
+.recipe-section-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.ingredients {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.ingredients li {
+  list-style: square;
+  font-size: 16px;
+  color: #333;
+}
+
+.steps {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.steps li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.back-button {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #58a27c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: #3b7e5c;
+}
+  </style>
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">CookBook</div>
+  <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="#">Recipes</a>
+      <a href="#">Featured</a>
+      <a href="#">Favorites</a>
+      <a href="#">My Page</a>
+  </nav>
+</header>
+
+<main>
+  <div class="recipe-container">
+    <h1 id="recipe-title" class="recipe-title">레시피 제목</h1>
+
+    <img id="recipe-image" class="recipe-image" src="" alt="레시피 이미지">
+
+    <p id="recipe-description" class="recipe-description">이 레시피는 ~한 맛이 특징입니다.</p>
+
+    <hr>
+
+    <h2 class="recipe-section-title">🥦 재료</h2>
+    <ul id="recipe-ingredients" class="ingredients"></ul>
+
+    <hr>
+
+    <h2 class="recipe-section-title">🍳 조리법</h2>
+    <ol id="recipe-steps" class="steps"></ol>
+
+    <a href="index.html" class="back-button">⬅ 메인으로 돌아가기</a>
+  </div>
+</main>
+
+<footer>
+  © 2025 CookBook. All rights reserved.
+</footer>
+
+<script src="js/recipe.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

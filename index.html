@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CookBook - 홈</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/popular.css">
+
+</head>
+<body>
+  
+  <!-- ✅ HEADER -->
+<header class="navbar">
+  <div class="logo">CookBook</div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a> <!-- 수정: 드롭다운 삭제 -->
+    <a href="#">Featured</a>
+    <a href="#">Favorites</a>
+    <a href="login.html">Login</a>  
+  </nav>
+</header>
+
+
+  <!-- ✅ MAIN -->
+  <main>
+    <form id="searchForm" action="search-result.html" method="GET">
+      <input type="text" id="searchInput" name="query" placeholder="레시피 검색...">
+      <button type="submit">검색</button>
+    </form>
+    
+    <!-- 🔥 추천 슬라이더 -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- slide1 -->
+        <div class="swiper-slide" style="background-image: url('images/slide1.jpg')">
+          <div class="slide-content">
+            <h2>이탈리안 샐러드 믹스</h2>
+            <p>신선한 채소와 과일을 곁들인 상큼한 샐러드</p>
+          </div>
+        </div>
+        <!-- slide2 -->
+        <div class="swiper-slide" style="background-image: url('images/slide2.jpg')">
+          <div class="slide-content">
+            <h2>모짜렐라 토마토 파스타</h2>
+            <p>치즈와 토마토의 완벽한 조화</p>
+          </div>
+        </div>
+        <!-- slide3 -->
+        <div class="swiper-slide" style="background-image: url('images/slide3.jpg')">
+          <div class="slide-content">
+            <h2>바나나 팬케이크</h2>
+            <p>아침을 위한 부드러운 선택</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 인기 레시피 섹션 -->
+<section class="popular-section">
+  <h2>🔥 인기 레시피</h2>
+  <div class="popular-container">
+    <a href="recipe.html?menu=kimchiStew" class="popular-card">
+      <img src="images/김치찌개.jpg" alt="김치찌개">
+      <div class="overlay">
+        <p>국물 맛이 진하고 얼큰한 김치찌개!</p>
+      </div>
+      <span class="recipe-name">김치찌개</span>
+    </a>
+
+    <a href="recipe.html?menu=carbonara" class="popular-card">
+      <img src="images/까르보나라.jpg" alt="까르보나라">
+      <div class="overlay">
+        <p>신선한 재료로 만든 정통 파스타!</p>
+      </div>
+      <span class="recipe-name">파스타</span>
+    </a>
+
+    <a href="recipe.html?menu=tonkatsu" class="popular-card">
+      <img src="images/돈카츠.jpg" alt="돈카츠">
+      <div class="overlay">
+        <p>육즙 가득 바삭한 돈카츠!</p>
+      </div>
+      <span class="recipe-name">돈카츠</span>
+    </a>
+
+    <a href="recipe.html?menu=tteokbokki" class="popular-card">
+      <img src="images/떡볶이.jpg" alt="떡볶이">
+      <div class="overlay">
+        <p>매콤하고 쫄깃한 떡볶이!</p>
+      </div>
+      <span class="recipe-name">떡볶이</span>
+    </a>
+
+    <a href="recipe.html?menu=ramyun" class="popular-card">
+      <img src="images/라면.jpg" alt="라면">
+      <div class="overlay">
+        <p>한국인의 소울푸드 라면!</p>
+      </div>
+      <span class="recipe-name">라면</span>
+    </a>
+
+    
+
+    <!-- ✨ 필요한 만큼 계속 추가 -->
+  </div>
+</section>
+
+
+  <!-- 최신 레시피 섹션 -->
+<section class="popular-section">
+  <h2>🔥 최신 레시피</h2>
+  <div class="popular-container">
+    <a href="recipe.html?menu=greekSalad" class="popular-card">
+      <img src="images/그릭샐러드.jpg" alt="그릭샐러드">
+      <div class="overlay">
+        <p>상큼한 올리브와 치즈 샐러드!</p>
+      </div>
+      <span class="recipe-name">그릭샐러드</span>
+    </a>
+
+    <a href="recipe.html?menu=macaron" class="popular-card">
+      <img src="images/마카롱.jpg" alt="마카롱">
+      <div class="overlay">
+        <p>사르르 녹는 달콤한 디저트!</p>
+      </div>
+      <span class="recipe-name">마카롱</span>
+    </a>
+
+    <a href="recipe.html?menu=lasagna" class="popular-card">
+      <img src="images/라자냐.jpg" alt="라자냐">
+      <div class="overlay">
+        <p>풍부한 미트소스와 치즈가 층층이 쌓인 라자냐!</p>
+      </div>
+      <span class="recipe-name">라자냐</span>
+    </a>
+
+    <a href="recipe.html?menu=taco" class="popular-card">
+      <img src="images/타코.jpg" alt="타코">
+      <div class="overlay">
+        <p>고기와 채소를 넣은 멕시코식 또띠야!</p>
+      </div>
+      <span class="recipe-name">타코</span>
+    </a>
+
+    <a href="recipe.html?menu=seaweedSoup" class="popular-card">
+      <img src="images/미역국.jpg" alt="미역국">
+      <div class="overlay">
+        <p>생일에 빠질 수 없는 미역국!</p>
+      </div>
+      <span class="recipe-name">미역국</span>
+    </a>
+
+    
+
+    <!-- ✨ 필요한 만큼 계속 추가 -->
+  </div>
+</section>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>© 2025 CookBook. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="logout.js"></script>
+</body>
+</html>

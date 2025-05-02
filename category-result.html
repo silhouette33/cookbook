@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookBook - 카테고리 결과</title>
+
+  <!-- CSS 파일 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/category-result.css"> <!-- 새로 추가될 스타일 -->
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">CookBook</div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="#">Featured</a>
+    <a href="#">Favorites</a>
+    <a href="#">My Page</a>
+  </nav>
+  
+</header>
+
+<main>
+  <!-- ✅ 여기에 선택된 카테고리명 -->
+  <section class="category-header">
+    <h1 id="selected-category-name">카테고리명</h1>
+  </section>
+
+  <!-- ✅ 여기에 레시피 목록 -->
+  <section class="recipe-list" id="recipe-list">
+    <!-- JavaScript로 자동 추가할 거야 -->
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 CookBook. All rights reserved.</p>
+</footer>
+
+<!-- JS 파일 -->
+<script src="js/recipe.js"></script> <!-- 네가 레시피 카테고리 추가할 파일 -->
+<script src="js/category-result.js"></script> <!-- 우리가 새로 만들 JS -->
+<script src="js/auth.js"></script>
+</body>
+</html>

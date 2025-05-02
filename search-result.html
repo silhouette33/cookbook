@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>검색 결과</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">CookBook</div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Featured</a>
+    <a href="#">Favorites</a>
+    <a href="#">My Page</a>
+  </nav>
+</header>
+
+<main>
+  <div id="result-message" style="text-align:center; margin-top:100px; font-size: 20px;">
+    검색 중입니다...
+  </div>
+</main>
+
+<footer>
+  © 2025 CookBook. All rights reserved.
+</footer>
+
+<!-- 🔽 recipe.js 먼저 로드 (recipes 전역변수 포함되어야 함) -->
+<script src="js/recipe.js"></script>
+
+<!-- 🔽 검색 결과 처리 -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const keyword = params.get("query")?.toLowerCase();
+
+    let matchedKey = null;
+    for (const key in recipes) {
+      if (recipes[key].title.toLowerCase() === keyword) {
+        matchedKey = key;
+        break;
+      }
+    }
+
+    if (matchedKey) {
+      // 자동 이동
+      window.location.href = `recipe.html?menu=${matchedKey}`;
+    } else {
+      document.getElementById("result-message").textContent = `"${keyword}"에 대한 레시피를 찾을 수 없습니다.`;
+      document.getElementById("result-message").style.color = "red";
+    }
+  });
+</script>
+<script src="js/auth.js"></script>
+</body>
+</html>
