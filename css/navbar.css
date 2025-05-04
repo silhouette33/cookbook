@@ -1,70 +1,91 @@
-nav.menu {
+/* Navbar 전체 레이아웃 */
+.navbar {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
     align-items: center;
-}
-
-nav.menu a {
+    padding: 16px 40px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  /* 로고 텍스트 */
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav.menu a:hover {
-    text-decoration: underline;
-}
-
-.icons {
+  }
+  
+  /* 메뉴 링크 */
+  nav.menu {
     display: flex;
-    gap: 20px;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.icon:hover {
-    opacity: 0.7;
-}
-
-/* 드롭다운 메뉴 */
-.dropdown {
-    position: relative;
-}
-
-.dropdown > a {
-    display: inline-block;
-    padding: 10px 20px;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  nav.menu a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-}
-
-.dropdown-content {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  
+  nav.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  
+  /* 드롭다운 메뉴 (선택 시 적용 가능) */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 0;
     background-color: #4CAF50;
-    padding: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     flex-direction: column;
     min-width: 160px;
     z-index: 10;
-}
-
-.dropdown-content a {
+    padding: 6px 0;
+  }
+  
+  .dropdown-content a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    font-size: 15px;
     display: block;
-    font-size: 16px;
-}
-
-.dropdown-content a:hover {
-    background-color: #45a049;
-}
-
-.dropdown:hover .dropdown-content {
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #3f9a41;
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: flex;
-}
+  }
+  
+  /* 아이콘 영역 (옵션) */
+  .icons {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    opacity: 0.75;
+  }
+  
