@@ -4,7 +4,7 @@ const recipes = {
     // --- 한식 ---
     kimchiStew: {
         title: "김치찌개",
-        image: "images/김치찌개.jpg",
+        image: "images/kimchiStew.jpg",
         description: "국물 맛이 진하고 얼큰한 김치찌개!",
         category: "한식",
         ingredients: [
@@ -26,7 +26,7 @@ const recipes = {
     },
     bulgogi: {
         title: "불고기",
-        image: "images/불고기.jpg",
+        image: "images/bulgogi.jpg",
         description: "달콤 짭조름한 소고기 볶음!",
         category: "한식",
         ingredients: [
@@ -47,7 +47,7 @@ const recipes = {
     },
     bibimbap: {
         title: "비빔밥",
-        image: "images/비빔밥.jpg",
+        image: "images/bibimbap.jpg",
         description: "다양한 나물과 고명을 비벼먹는 한식 대표 음식!",
         category: "한식",
         ingredients: [
@@ -70,7 +70,7 @@ const recipes = {
     },
     japchae: {
         title: "잡채",
-        image: "images/잡채.jpg",
+        image: "images/japchae.jpg",
         description: "쫄깃한 당면과 야채가 어우러진 볶음요리!",
         category: "한식",
         ingredients: [
@@ -92,7 +92,7 @@ const recipes = {
     },
     galbijjim: {
         title: "갈비찜",
-        image: "images/갈비찜.jpg",
+        image: "images/galbijjim.jpg",
         description: "부드럽게 졸여낸 양념 갈비 요리!",
         category: "한식",
         ingredients: [
@@ -128,7 +128,7 @@ const recipes = {
     },
     carbonara: {
         title: "까르보나라",
-        image: "images/까르보나라.jpg",
+        image: "images/carbonara.jpg",
         description: "진한 크림 소스와 베이컨이 어우러진 파스타",
         ingredients: ["스파게티면 150g", "베이컨 100g", "달걀노른자 2개", "파르메산 치즈 50g", "후추 약간", "올리브오일 1큰술"],
         category: "양식",
@@ -143,7 +143,7 @@ const recipes = {
     lasagna: {
         title: "라자냐",
         category: "양식",
-        image: "images/라자냐.jpg",
+        image: "images/lasagna.jpg",
         description: "풍부한 미트소스와 치즈가 층층이 쌓인 라자냐",
         ingredients: ["라자냐면 6장", "소고기 다짐육 300g", "토마토소스 400g", "모짜렐라 치즈 150g", "리코타 치즈 100g", "양파 1개"],
         steps: [
@@ -200,7 +200,7 @@ const recipes = {
     jjamppong: {
         title: "짬뽕",
         category: "중식",
-        image: "images/짬뽕.jpg",
+        image: "images/jjamppong.jpg",
         description: "매콤한 해물 국물 요리",
         ingredients: ["중화면 200g", "오징어 100g", "홍합 100g", "배추 100g", "고추기름 2큰술", "다진마늘 1큰술", "육수 500ml"],
         steps: [
@@ -214,7 +214,7 @@ const recipes = {
     mapoTofu: {
         title: "마파두부",
         category: "중식",
-        image: "images/마파두부.jpg",
+        image: "images/mapoTofu.jpg",
         description: "매콤한 두부 볶음 요리",
         ingredients: ["두부 300g", "돼지고기 다짐육 100g", "두반장 1큰술", "간장 1큰술", "대파 1대", "고추기름 1큰술"],
         steps: [
@@ -228,7 +228,7 @@ const recipes = {
     tangsuyuk: {
         title: "탕수육",
         category: "중식",
-        image: "images/탕수육.jpg",
+        image: "images/tangsuyuk.jpg",
         description: "바삭한 튀김과 새콤달콤한 소스",
         ingredients: ["돼지고기 안심 300g", "감자전분 1컵", "식초 2큰술", "설탕 2큰술", "간장 1큰술", "오이 50g", "당근 30g"],
         steps: [
@@ -242,7 +242,7 @@ const recipes = {
     guobaorou: {
         title: "꿔바로우",
         category: "중식",
-        image: "images/꿔바로우.jpg",
+        image: "images/guobaorou.jpg",
         description: "새콤달콤 바삭한 찹쌀 탕수육",
         ingredients: ["돼지고기 등심 300g", "찹쌀가루 1컵", "식초 3큰술", "설탕 3큰술", "간장 1큰술"],
         steps: [
@@ -258,7 +258,7 @@ const recipes = {
     tonkatsu: {
         title: "돈카츠",
         category: "일식",
-        image: "images/돈카츠.jpg",
+        image: "images/tonkatsu.jpg",
         description: "바삭한 일본식 돈가스",
         ingredients: ["돼지고기 등심 200g", "밀가루 1/2컵", "달걀 1개", "빵가루 1컵", "식용유 적당량"],
         steps: [
@@ -594,7 +594,7 @@ const recipes = {
     tteokbokki: {
         title: "떡볶이",
         category: "분식",
-        image: "images/떡볶이.jpg",
+        image: "images/tteokbokki.jpg",
         description: "매콤달콤 국민 간식 떡볶이",
         ingredients: ["떡 300g", "어묵 100g", "고추장 2큰술", "설탕 1큰술", "간장 1큰술", "물 400ml", "대파 1대"],
         steps: [
@@ -697,7 +697,7 @@ const recipes = {
     coldNoodles: {
         title: "냉면",
         category: "면류",
-        image: "images/냉면.jpg",
+        image: "images/coldNoodles.jpg",
         description: "시원한 여름 별미 냉면",
         ingredients: ["냉면사리 1개", "냉면육수 1팩", "오이 약간", "삶은 계란 1개", "식초 약간"],
         steps: [
@@ -917,12 +917,12 @@ const recipes = {
 
 };
 
-// recipe.html 전용 렌더링 코드: 해당 요소가 존재할 때만 실행되도록 보호
+// recipe.html 전용 렌더링 코드
 if (document.getElementById('recipe-title')) {
     const params = new URLSearchParams(window.location.search);
     const menu = params.get('menu');
     const key = params.get('key');
-    const recipeKey = menu || key;  // menu가 있으면 menu를, 없으면 key를 사용
+    const recipeKey = menu || key;
     const recipe = recipes[recipeKey];
 
     if (recipe) {
@@ -945,5 +945,40 @@ if (document.getElementById('recipe-title')) {
         });
     } else {
         document.getElementById('recipe-title').textContent = "레시피를 찾을 수 없습니다.";
+    }
+
+    // 즐겨찾기 기능
+    const favoriteButton = document.getElementById("favorite-button");
+    if (favoriteButton) {
+        const user = localStorage.getItem("cookbookUser");
+        const users = JSON.parse(localStorage.getItem("users") || "{}");
+
+        if (!user || !users[user]) {
+            favoriteButton.textContent = "로그인 필요";
+            favoriteButton.disabled = true;
+        } else {
+            const favorites = users[user].favorites || [];
+
+            // 초기 상태
+            if (favorites.includes(recipeKey)) {
+                favoriteButton.textContent = "★ 즐겨찾기";
+            } else {
+                favoriteButton.textContent = "☆ 즐겨찾기";
+            }
+
+            // 클릭 시 토글
+            favoriteButton.addEventListener("click", () => {
+                const index = favorites.indexOf(recipeKey);
+                if (index === -1) {
+                    favorites.push(recipeKey);
+                    favoriteButton.textContent = "★ 즐겨찾기";
+                } else {
+                    favorites.splice(index, 1);
+                    favoriteButton.textContent = "☆ 즐겨찾기";
+                }
+                users[user].favorites = favorites;
+                localStorage.setItem("users", JSON.stringify(users));
+            });
+        }
     }
 }
